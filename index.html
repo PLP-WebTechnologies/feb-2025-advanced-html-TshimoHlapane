@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Assignment Week 2</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/534049/pexels-photo-534049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Rock Cliff Near Seashore" width="600">
+
+    <!-- Table of Contacts -->
+    <h2>Contacts</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Yuji Itadori</td>
+                <td>1st Avenue, Tokyo</td>
+                <td>+81123456789</td>
+                <td>yuji.itadori@example.com</td>
+            </tr>
+            <tr>
+                <td>Megumi Fushiguro</td>
+                <td>2nd Street, Kyoto</td>
+                <td>+81987654321</td>
+                <td>megumi.fushiguro@example.com</td>
+            </tr>
+            <tr>
+                <td>Nobara Kugisaki</td>
+                <td>3rd Lane, Sendai</td>
+                <td>+81876543210</td>
+                <td>nobara.kugisaki@example.com</td>
+            </tr>
+            <tr>
+                <td>Satoru Gojo</td>
+                <td>4th Boulevard, Osaka</td>
+                <td>+81765432109</td>
+                <td>satoru.gojo@example.com</td>
+            </tr>
+            <tr>
+                <td>Suguru Geto</td>
+                <td>5th Road, Nagoya</td>
+                <td>+81654321098</td>
+                <td>suguru.geto@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <!-- Confirm Password Field -->
+        <label for="confirm-password">Confirm Password:</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required><br><br>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Gender Dropdown -->
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <!-- Interests (Checkboxes) -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label><br><br>
+
+        <!-- Subscription (Radio Buttons) -->
+        <label>Subscribe to Newsletter:</label><br>
+        <input type="radio" id="subscribe-yes" name="subscribe" value="yes" required>
+        <label for="subscribe-yes">Yes</label><br>
+        <input type="radio" id="subscribe-no" name="subscribe" value="no">
+        <label for="subscribe-no">No</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
 
